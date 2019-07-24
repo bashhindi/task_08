@@ -19,6 +19,9 @@
           </ul>
         </div>
     </div>
+    {% if restaurant.logo %}
+                <img src="{{restaurant.logo.url}}" alt ="">
+            {% endif %}
     {% endfor %}
 </div>
 {% endblock content %}
